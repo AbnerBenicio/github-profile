@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background: linear-gradient(360deg, #00001a, #060022, #03002e);
+}
+
+.container input {
+    width: 350px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+.card {
+    display: none;
+}
+
+.card.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 390px;
+    background-color: rgba(100, 100, 100, 0.4);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    gap: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.card a {
+    color: #fff; 
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.card img {
+    width: 45%;
+    border-radius: 50%;
+}
+
+.card .flws {
+    display: flex;
+    gap: 15px;
+}
+
+@media (max-width: 500px) {
+    .card.active {
+        width: 350px;
+        font-size: 15px;
+    }
+
+    .card a {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 280px) {
+    .container input {
+        width: 250px;
+        font-size: 15px;
+        
+    }
+    
+    .card.active {
+        width: 250px;
+        font-size: 10px;
+    }
+
+    .card a {
+        font-size: 9px;
+    }
+}
+
+@media (max-height: 450px) {
+    .container input {
+        width: 270px;
+        font-size: 15px;
+        
+    }
+    
+    .card.active {
+        width: 270px;
+        font-size: 11px;
+    }
+
+    .card a {
+        font-size: 9px;
+    }
+}
+
+@media (max-height: 280px) {
+    .container input {
+        width: 150px;
+        font-size: 10px;
+        
+    }
+    
+    .card.active {
+        width: 200px;
+        font-size: 7px;
+    }
+
+    .card a {
+        font-size: 7px;
+    }
+}
